@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Dashboard Clap SSL</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="../assets/bootstrap.min.css">
+      <link rel=icon href=../images/logo.jpeg sizes="16x16" type="image/jpef">
+      <link rel="stylesheet" href="../assets/w3.css">
+      <link rel="stylesheet" href="../assets/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="../assets/jquery-3.6.min.js"></script>
+      <script src="../assets/bootstrap.min.js"></script>
+   </head>
+   <body id="myPage">
+      <!-- Sidebar/menu -->
+      <nav class="w3-sidebar w3-collapse sidebar-bg w3-animate-left" id="mySidebar">
+         <br>
+         <div class="w3-container">
+            <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-large w3-padding w3-hover-grey" title="close menu">
+            <i class="fa fa-remove"></i>
+            </a>
+            <img src="../images/ClapSSL/logo.png"  class="dashboard-logo w3-round"><br><br>
+         </div>
+         <hr>
+         <div class="w3-row w3-padding-16">
+            <div class="w3-col l4 m4 s4">
+               <div class="circle-container circle-style">
+                  <div class="circle-absolute">
+                     <h4 class="w3-text-white">RA</h4>
+                  </div>
+               </div>
+            </div>
+            <div class="w3-col l8 m8 s8">
+               <h4 class="font-16 ff-sbold">Mukarram Hussain</h4>
+               <p class="font-12 text-light-gray">Mukarram@gmail.com</p>
+            </div>
+            <br>
+            <div class="w3-container"><a href="edit-profile.html"><button class="btn-nav-manu bg-grad font-16 ff-sbold">Edit Profile</button></a></div>
+         </div>
+         <div class="w3-bar-block w3-padding-32-top" id="w3-bar-block">
+            <h5 class="w3-container font-18 ff-sbold w3-text-black">Features</h5>
+            <br>
+            <a href="index.html" onclick="w3_close()" class="w3-bar-item"><span class="icon icon-category w3-margin-right"></span><span class="icon">Dashboard</span></a> 
+            <a href="my-certificate.html" onclick="w3_close()" class="w3-bar-item"><span class="icon icon-document w3-margin-right"></span><span class="icon">My Certificates</span></a> 
+            <a href="my-server.html" onclick="w3_close()" class="w3-bar-item"><span class="icon icon-cloud-connection w3-margin-right"></span><span class="icon">My Servers</span></a>
+            <a href="my-deployment.html" onclick="w3_close()" class="w3-bar-item"><span class="icon icon-discount w3-margin-right"></span><span class="icon">My Deployments</span></a>
+            <a href="offer.html" onclick="w3_close()" class="w3-bar-item"><span class="icon icon-document w3-margin-right"></span><span class="icon">Our Offer</span></a>
+            <a href="manage-payment.html" onclick="w3_close()" class="w3-bar-item"><span class="icon icon-driver w3-margin-right"></span><span class="icon">Manage Payments</span></a>
+         </div>
+         <br>
+         <div class="w3-container w3-padding-8">
+            <div class="w3-white w3-container w3-border-rad-8">
+               <h5 class="main-col font-12">Clap SSL Knowledge</h5>
+               <h5 class="w3-text-black font-16 font-w-700">Learn more about secure certificate</h5>
+               <h5 class="text-light-gray font-12">Our Knowledge base has the necessary knowledge to account you with even the most technical knowledge</h5>
+               <p><a href="sign-in.html"><button class="btn-learn-more font-12 ff-sbold bg-grad">Learn more</button></a></p>
+            </div>
+         </div>
+         <br>
+         <div class="w3-bar-block" id="w3-bar-block-s">
+            <a href="setting.html" onclick="w3_close()" class="w3-bar-item "><span class="icon icon-setting w3-margin-right"></span><span class="icon">Settings</span></a> 
+            <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding log-text-red"><img src="../images/ClapSSL/svg/vuesax/linear/logout.svg" class="w3-image w3-margin-right"><span>Logout</span></a> 
+         </div>
+      </nav>
+      <!-- Overlay effect when opening sidebar on small screens -->
+      <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+      <!-- !PAGE CONTENT! -->
+      <div class="w3-main  main-style">
+         <!-- Header -->
+         <header id="portfolio" class="w3-padding-40-lr w3-white ">
+            <a href="#"><img src="../images/ClapSSL/logo-sl.png" style="width:48px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+            <br><button class="w3-padding w3-btn w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars main-col"></i></button>
+            <br><br><br>
+            <div class="w3-container">
+               <div class="row">
+                  <div class="col-lg-6">
+                     <div class="w3-row">
+                        <div class=" w3-container w3-col l8 m10 w3-margin-bottom w3-border w3-border-rad-8">
+                           <div class="w3-left">
+                              <h5 class="placholder-col">Available balance</h5>
+                           </div>
+                           <div class="w3-right">
+                              <h5 class="w3-text-green font-w-700">$500</h5>
+                           </div>
+                        </div>
+                        <div class="w3-col l4  m2 w3-margin-bottom">
+                           <button class="btn  pay-btn bg-grad w3-text-white ff-sbold font-16"  onclick="document.getElementById('Pay').style.display='block'">
+                           Pay
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="w3-container col-lg-6">
+                     <div class="w3-row">
+                        <div class="w3-col l10 m10 s9">
+                           <input type="text" name="search" class="certificate-search" placeholder="Search Certificate">
+                        </div>
+                        <div class="w3-col l2 m2 s3 w3-center">
+                           <div class="dropdown">
+                              <div class="notification-bg click-btn">
+                                 <i class="fa fa-bell icon-style"></i>
+                                 <span class="badge-circle w3-red" id="badge">3</span>
+                              </div>
+                              <div id="myDropdown" class="dropdown-content w3-card">
+                                 <div class="w3-container w3-padding-16">
+                                    <h3 class="font-w-700 w3-text-black w3-left">Notifications</h3>
+                                    <h6 class="font-w-700 w3-text-black w3-right w3-underline">Mark all as read</h6>
+                                 </div>
+                                 <div class="w3-row notif-list-style notif-active">
+                                    <div class="w3-col" style="width:70px"><img src="../images/ClapSSL/exclamation.png" class="notif-list-img"></div>
+                                    <div class="w3-rest border-bottom">
+                                       <p><span class="font-w-700">Your Certificate replecon.com</span> is Expired Renew to secure your connection</p>
+                                       <p class="text-gray w3-medium">2h ago</p>
+                                    </div>
+                                 </div>
+                                 <div class="w3-row notif-list-style notif-active">
+                                    <div class="w3-col" style="width:70px"><img src="../images/ClapSSL/total-cert.png" class="notif-list-img"></div>
+                                    <div class="w3-rest border-bottom">
+                                       <p><span class="font-w-700">Your Certificate replecon.com</span> is renewed</p>
+                                       <p class="text-gray w3-medium">2h ago</p>
+                                    </div>
+                                 </div>
+                                 <div class="w3-row notif-list-style ">
+                                    <div class="w3-col" style="width:70px"><img src="../images/ClapSSL/about1.png" class="notif-list-img"></div>
+                                    <div class="w3-rest border-bottom">
+                                       <p><span class="font-w-700">Your Server replecon.com</span> is approved</p>
+                                       <p class="text-gray w3-medium">2h ago</p>
+                                    </div>
+                                 </div>
+                                 <div class="w3-row notif-list-style ">
+                                    <div class="w3-col" style="width:70px"><img src="../images/ClapSSL/total-cert.png" class="notif-list-img"></div>
+                                    <div class="w3-rest border-bottom">
+                                       <p><span class="font-w-700">Your Certificate replecon.com</span> is renewed</p>
+                                       <p class="text-gray w3-medium">2h ago</p>
+                                    </div>
+                                 </div>
+                                 <div class="w3-center w3-padding-bottom-10">
+                                    <a href="#">
+                                       <p class="bar-bottom-notif font-w-700">See all</p>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <br><br><br>
+         </header>
+         <!--Body-->
+         <div class="w3-container bg-light-gray w3-margin-top-30 certificate-padding" id="test-results">
+            <h2 class="w3-text-black font-25 font-w-700 letter-s-n ff-normal">Test Results</h2>
+            <br>
+            <div class="w3-row margin-top">
+               <div class="w3-col l12 w3-border-rad-8 w3-white">
+                  <div class="w3-container w3-padding-16">
+                     <h4 class="font-w-700 w3-margin-left font-22">Test Information</h4>
+                     <div class="w3-container w3-padding-16">
+                        <div class="row w3-padding-large text-center-res">
+                           <div class="col-lg-3 col-md-5 col-sm-12 col-xs-12">
+                              <div class="w3-row">
+                                 <div class="w3-col l2"><img src="../images/ClapSSL/global.png" class="test-icon"></div>
+                                 <div class="w3-col l8 margin-top test-info-lbl font-16 font-w-600">Tested URL</div>
+                              </div>
+                           </div>
+                           <div class="col-lg-9 col-md-7 col-sm-12 col-xs-12">
+                              <div class="font-w-700 margin-top test-info-lb font-16">http://myr.ai/orb/admin</div>
+                           </div>
+                        </div>
+                        <div class="row w3-padding-large text-center-res">
+                           <div class="col-lg-3 col-md-5 col-sm-12 col-xs-12">
+                              <div class="w3-row">
+                                 <div class="w3-col l2"><img src="../images/ClapSSL/clock.png" class="test-icon"></div>
+                                 <div class="w3-col l8 margin-top test-info-lbl font-16 font-w-600">Test Completed</div>
+                              </div>
+                           </div>
+                           <div class="col-lg-9 col-md-7 col-sm-12 col-xs-12">
+                              <div class="font-w-700 margin-top test-info-lb font-16">http://myr.ai/orb/admin</div>
+                           </div>
+                        </div>
+                        <div class="row w3-padding-large text-center-res">
+                           <div class="col-lg-3 col-md-5 col-sm-12 col-xs-12">
+                              <div class="w3-row">
+                                 <div class="w3-col l2 "><img src="../images/ClapSSL/location.png" class="test-icon"></div>
+                                 <div class="w3-col l8 margin-top test-info-lbl font-16 font-w-600">Results URL</div>
+                              </div>
+                           </div>
+                           <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12">
+                              <div class="font-w-700 margin-top test-info-lb font-16">http://myr.ai/orb/admin</div>
+                           </div>
+                           <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
+                              <div class="w3-bar-item margin-top float-right-copy"><img src="../images/ClapSSL/copy.png" class="test-icon"></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <br>
+            <div class="w3-row margin-top">
+               <div class="w3-col l12 w3-border-rad-8 w3-white">
+                  <div class="w3-container w3-padding-16">
+                     <h4 class="font-w-700 w3-margin-left font-22">SSl Certificate Info</h4>
+                     <div class="w3-container w3-padding-16">
+                        <div class="row w3-padding-large text-center-res">
+                           <div class="col-lg-3 col-md-5 col-sm-12 col-xs-12">
+                              <div class="w3-row">
+                                 <div class="w3-col l2"><img src="../images/ClapSSL/document-text.png" class="test-icon"></div>
+                                 <div class="w3-col l8 margin-top test-info-lbl font-16 font-w-600">Certificate Issuer</div>
+                              </div>
+                           </div>
+                           <div class="col-lg-9 col-md-7 col-sm-12 col-xs-12">
+                              <div class="font-w-700 margin-top test-info-lb font-16">Sectigo Limited</div>
+                           </div>
+                        </div>
+                        <div class="row w3-padding-large text-center-res">
+                           <div class="col-lg-3 col-md-5 col-sm-12 col-xs-12">
+                              <div class="w3-row">
+                                 <div class="w3-col l2"><img src="../images/ClapSSL/document-text.png" class="test-icon"></div>
+                                 <div class="w3-col l8 margin-top test-info-lbl font-16 font-w-600">Certificate Type</div>
+                              </div>
+                           </div>
+                           <div class="col-lg-9 col-md-7 col-sm-12 col-xs-12">
+                              <div class="font-w-700 margin-top test-info-lb font-16">Secto RSA Domain Validation </div>
+                           </div>
+                        </div>
+                        <div class="row w3-padding-large text-center-res">
+                           <div class="col-lg-3 col-md-5 col-sm-12 col-xs-12">
+                              <div class="w3-row">
+                                 <div class="w3-col l2"><img src="../images/ClapSSL/document-text.png" class="test-icon"></div>
+                                 <div class="w3-col l8 margin-top test-info-lbl font-16 font-w-600">Issued On</div>
+                              </div>
+                           </div>
+                           <div class="col-lg-9 col-md-7 col-sm-12 col-xs-12">
+                              <div class="font-w-700 margin-top test-info-lb font-16">2021-5-5</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <br>
+            <div class="w3-row margin-top">
+               <div class="w3-col l12 w3-border-rad-8 w3-white">
+                  <div class="w3-container w3-padding-16">
+                     <div class="flex-SB">
+                        <div class="flex-1">
+                           <h4 class="font-w-700 w3-margin-left font-22">SSL Connection <span class="w3-margin-left w3-green-text-vbg font-22">PASS</span></h4>
+                        </div>
+                        <div class="flex-2">
+                           <h5 class="w3-green-text-vbg w3-margin-left w3-margin-right font-16">Expiration Date: 2030-5-26</h5>
+                        </div>
+                     </div>
+                     <div class="w3-container w3-padding-16">
+                        <div class="row w3-padding-large text-center-res">
+                           <div class="col-lg-3 w3-green-ssl">
+                              <div class="w3-bar">
+                                 <div class="w3-bar-item width-50px"><img src="../images/ClapSSL/shield-tick.png" class="test-icon"></div>
+                                 <div class="w3-bar-item margin-top w3-green-text-vbg font-16">Force HTTPS</div>
+                              </div>
+                           </div>
+                           <div class="col-lg-9">
+                              <div class="font-w-700 margin-top w3-text-black font-16">Your web server is forcing the use of SSL</div>
+                           </div>
+                        </div>
+                        <div class="row w3-padding-large text-center-res">
+                           <div class="col-lg-3 w3-green-ssl">
+                              <div class="w3-bar">
+                                 <div class="w3-bar-item width-50px"><img src="../images/ClapSSL/shield-tick.png" class="test-icon"></div>
+                                 <div class="w3-bar-item margin-top w3-green-text-vbg font-16">Valid Certificate</div>
+                              </div>
+                           </div>
+                           <div class="col-lg-9">
+                              <div class="font-w-700 margin-top w3-text-black font-16">Your web server is forcing the use of SSL</div>
+                           </div>
+                        </div>
+                        <div class="row w3-padding-large text-center-res">
+                           <div class="col-lg-3 w3-green-ssl">
+                              <div class="w3-bar">
+                                 <div class="w3-bar-item width-50px"><img src="../images/ClapSSL/shield-tick.png" class="test-icon"></div>
+                                 <div class="w3-bar-item margin-top w3-green-text-vbg font-16">Domain Matching</div>
+                              </div>
+                           </div>
+                           <div class="col-lg-9">
+                              <div class="font-w-700 margin-top w3-text-black font-16">Your web server is forcing the use of SSL</div>
+                           </div>
+                        </div>
+                        <div class="row w3-padding-large text-center-res">
+                           <div class="col-lg-3 w3-green-ssl">
+                              <div class="w3-bar">
+                                 <div class="w3-bar-item width-50px"><img src="../images/ClapSSL/shield-tick.png" class="test-icon"></div>
+                                 <div class="w3-bar-item margin-top w3-green-text-vbg font-16">Your Signature</div>
+                              </div>
+                           </div>
+                           <div class="col-lg-9">
+                              <div class="font-w-700 margin-top w3-text-black font-16">Your web server is forcing the use of SSL</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <br>
+            <div class="w3-row margin-top">
+               <div class="w3-col l12 w3-border-rad-8 w3-white">
+                  <div class="w3-container w3-padding-16">
+                     <div class="flex-SB">
+                        <div class="flex-1">
+                           <h4 class="font-w-700 w3-margin-left font-22">SSL Connection <span class="w3-margin-left w3-text-red font-22">FAIL</span></h4>
+                        </div>
+                     </div>
+                     <div class="w3-container w3-padding-16">
+                        <div class="row w3-padding-large text-center-res">
+                           <div class="col-lg-3 w3-red-ssl">
+                              <div class="w3-bar">
+                                 <div class="w3-bar-item width-50px"><img src="../images/ClapSSL/fail.png" class="fail-icon"></div>
+                                 <div class="w3-bar-item margin-top w3-text-red font-16">Force HTTPS</div>
+                              </div>
+                           </div>
+                           <div class="col-lg-9">
+                              <div class="font-w-700 margin-top w3-text-black font-16">You have no mixed content</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- End page content -->
+      </div>
+      <!--main-content-->
+      <!--modal-boxes-->
+      <!--modal for buy now-->
+      <div id="Pay" class="w3-modal" >
+         <div class="w3-modal-content w3-border-rad-8" style="margin: auto;max-width: 500px;">
+            <div class="w3-container padding-t-b">
+               <h4 class="w3-text-black font-w-700 text-center">Payment</h4>
+               <br><br>
+               <div class="payment">
+                  <button class="paymentLinks" onclick="openPaymet(event, 'master')" id="defaultOpen"><img src="../images/ClapSSL/Payment Method/Mastercard.png" class="payment-img-style"></button>
+                  <button class="paymentLinks" onclick="openPaymet(event, 'visa')"><img src="../images/ClapSSL/Payment Method/Visa.png" class="payment-img-style"></button>
+                  <button class="paymentLinks" onclick="openPaymet(event, 'paypal')"><img src="../images/ClapSSL/Payment Method/PayPal.png" class="payment-img-style"></button> 
+               </div>
+               <div id="master" class="paymentContent">
+                  <form class="" action="">
+                     <br>
+                     <label class="font-16 ff-sbold">Select Package</label>
+                     <select class="w3-input-sl" id="sel1">
+                        <option>Basic Package (Current Package)</option>
+                        <option>Package 1</option>
+                        <option>Package 2</option>
+                        <option>Package 3</option>
+                     </select>
+                     <br><br>
+                     <br>
+                     <div class="">
+                        <div class="w3-left"><span class="font-16 text-gray-mpm">SSL Basic Package</span></div>
+                        <div class="w3-right"><span class=" w3-text-black font-w-700 font-18">$250</span></div>
+                        <br><br><br>
+                        <div class="w3-left"><span class="font-16 text-gray-mpm">Tax and GST</span></div>
+                        <div class="w3-right"><span class=" w3-text-black font-w-700"></span></div>
+                        <br><br>
+                        <hr>
+                        <br>
+                        <div class="w3-left"><span class="font-16 text-gray-mpm font-w-700">Sub Total</span></div>
+                        <div class="w3-right"><span class="w3-text-black font-w-700 font-18"> $260.00</span></div>
+                        <br><br><br>
+                     </div>
+                     <p class="w3-padding-16">
+                        <button class="btn-nav-manu bg-grad font-16 font-w-600">Confirm Payment</button><br>
+                        <button class="w3-btn btn-nav-manu bg-light-gray font-16 text-gray" onclick="document.getElementById('Pay').style.display ='none'">Close</button>
+                     </p>
+                  </form>
+               </div>
+               <div id="visa" class="paymentContent">
+                  <form class="" action="">
+                     <br>
+                     <label class="font-16 ff-sbold">Select Package</label>
+                     <select class="w3-input-sl" id="sel1">
+                        <option>Basic Package (Current Package)</option>
+                        <option>Package 1</option>
+                        <option>Package 2</option>
+                        <option>Package 3</option>
+                     </select>
+                     <br><br>
+                     <br>
+                     <div class="">
+                        <div class="w3-left"><span class="font-16 text-gray-mpm">SSL Basic Package</span></div>
+                        <div class="w3-right"><span class=" w3-text-black font-w-700 font-18">$250</span></div>
+                        <br><br><br>
+                        <div class="w3-left"><span class="font-16 text-gray-mpm">Tax and GST</span></div>
+                        <div class="w3-right"><span class=" w3-text-black font-w-700"></span></div>
+                        <br><br>
+                        <hr>
+                        <br>
+                        <div class="w3-left"><span class="font-16 text-gray-mpm font-w-700">Sub Total</span></div>
+                        <div class="w3-right"><span class="w3-text-black font-w-700 font-18"> $260.00</span></div>
+                        <br><br><br>
+                     </div>
+                     <p class="w3-padding-16">
+                        <button class="btn-nav-manu bg-grad font-16 font-w-600">Confirm Payment</button><br>
+                        <button class="w3-btn btn-nav-manu bg-light-gray font-16 text-gray" onclick="document.getElementById('Pay').style.display ='none'">Close</button>
+                     </p>
+                  </form>
+               </div>
+               <div id="paypal" class="paymentContent">
+                  <form class="" action="">
+                     <br>
+                     <label class="font-16 ff-sbold">Select Package</label>
+                     <select class="w3-input-sl" id="sel1">
+                        <option>Basic Package (Current Package)</option>
+                        <option>Package 1</option>
+                        <option>Package 2</option>
+                        <option>Package 3</option>
+                     </select>
+                     <br><br>
+                     <br>
+                     <div class="">
+                        <div class="w3-left"><span class="font-16 text-gray-mpm">SSL Basic Package</span></div>
+                        <div class="w3-right"><span class=" w3-text-black font-w-700 font-18">$250</span></div>
+                        <br><br><br>
+                        <div class="w3-left"><span class="font-16 text-gray-mpm">Tax and GST</span></div>
+                        <div class="w3-right"><span class=" w3-text-black font-w-700"></span></div>
+                        <br><br>
+                        <hr>
+                        <br>
+                        <div class="w3-left"><span class="font-16 text-gray-mpm font-w-700">Sub Total</span></div>
+                        <div class="w3-right"><span class="w3-text-black font-w-700 font-18"> $260.00</span></div>
+                        <br><br><br>
+                     </div>
+                     <p class="w3-padding-16">
+                        <button class="btn-nav-manu bg-grad font-16 font-w-600">Confirm Payment</button><br>
+                        <button class="w3-btn btn-nav-manu bg-light-gray font-16 text-gray" onclick="document.getElementById('Pay').style.display ='none'">Close</button>
+                     </p>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="../assets/javascript.js"></script>
+   </body>
+</html>

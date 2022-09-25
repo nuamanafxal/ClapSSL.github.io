@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Clap SSL</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="assets/bootstrap.min.css">
+      <link rel=icon href=images/ClapSSL/logo-sl.png sizes="16x16" type="image/jpef">
+      <link rel="stylesheet" href="assets/w3.css">
+      <link rel="stylesheet" href="assets/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="assets/jquery-3.6.min.js"></script>
+      <script src="assets/javascript.js"></script>
+      <script src="assets/bootstrap.min.js"></script>
+   </head>
+   <body id="myPage">
+      <!--header-->
+      <div class="flex-row">
+         <div class="bgimg1 width-30">
+            <div class="middle1">
+               <div class="w3-padding">
+                  <br><br>
+                  <div class="tab">
+                     <button class="tablinks" onclick="openAccount(event, 'login')" id="defaultOpen">Login</button>
+                     <button class="tablinks" onclick="openAccount(event, 'sign-up')">SignUp</button>
+                  </div>
+                  <br>
+                  <div id="login" class="w3-container  tabcontent">
+                     <form class="" action="Dashboard/index.html">
+                        <label class="w3-text-black w3-left font-14 font-w-700">Email</label>
+                        <input class="w3-input-sl"  name="email" type="text">
+                        <br>
+                        <label class="w3-text-black w3-left font-14 font-w-700">Password</label>
+                        <input class="w3-input-sl" id="pass" name="pass"  type="password" >
+                        <p class="text-left w3-text-gray font-14 w3-padding-16">Don't Remeber Your Password?</p>
+                        <p>
+                           <a href="Dashboard/index.html"><button class="btn-grad-price-w font-w-600 w3-text-white font-14">Login</button></a>
+                        </p>
+                        <p class="w3-padding-16">
+                           <button class="btn-grad-price w3-white w3-text-black w3-card font-20"><img src="images/ClapSSL/g-icon.png" class="google-icon"> &nbsp; Sign Up with google</button>
+                        </p>
+                     </form>
+                  </div>
+                  <div id="sign-up" class="w3-container tabcontent">
+                     <form class="" action="">
+                        <label class="w3-text-black w3-left font-14 font-w-700">Email</label>
+                        <input class="w3-input-sl"  name="email" type="text">
+                        <br>
+                        <label class="w3-text-black w3-left font-14 font-w-700">Password</label>
+                        <input class="w3-input-sl" id="pass" name="pass"  type="password" required>
+                        <p class="text-left w3-text-gray font-14 w3-padding-16">Don't Remeber Your Password?</p>
+                        <p>
+                           <button class="btn-grad-price-w  w3-text-white font-14 font-w-600 ">Sign Up</button>
+                        </p>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="bottomleft">
+               <div class="icon-bar-2 f-h4">
+                  <a href="#" class="twitter  w3-text-white main-col-bg">
+                  <i class="fa fa-twitter"></i>
+                  </a>
+                  <a href="#" class="facebook  w3-text-white main-col-bg">
+                  <i class="fa fa-facebook"></i>
+                  </a>
+                  <a href="#" class="linkedin  w3-text-white main-col-bg">
+                  <i class="fa fa-linkedin"></i>
+                  </a>
+                  <a href="#" class="youtube w3-text-white main-col-bg">
+                  <i class="fa fa-youtube"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="topleft">
+            <a href="index.html"><img src="images/ClapSSL/logo-sl.png" class="logo-sl"></a>
+         </div>
+         <!--right-->
+         <div class="bgimg width-70">
+            <div class="middle">
+               <h1 class="ff-bold text-left">Certificate <br> lifecycle <br>management <br>on Auto Pilot</h1>
+               <p class="sl-text font-16">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus amet odit aspernatur pariatur ad quasi quae dolor eaque in obcaecati tempore impedit excepturi adipisci porro.</p>
+               <br>
+            </div>
+         </div>
+      </div>
+   </body>
+   <script>
+      function openAccount(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" activee", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " activee";
+      }
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+   </script>
+</html>
