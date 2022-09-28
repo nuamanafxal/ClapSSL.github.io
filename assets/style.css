@@ -58,7 +58,7 @@
   .n-gray{color: #64748B;
   }
   h1,h2{
-  letter-spacing: -2px;
+  line-height: 40px;
   }
   .letter-s-n{
   letter-spacing:normal!important;
@@ -2490,14 +2490,6 @@ outline:none;
 }
 button.accordion{
   background-color: transparent;
-}
-
-.active:before {
-   content: '\203A';
-  color: #35199a;
-  font-weight: 600;
-  margin-right: 8px;
-  font-size:23px;
 }
 .ac-active{color: black !important;}
 .panell {
