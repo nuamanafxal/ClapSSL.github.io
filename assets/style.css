@@ -58,7 +58,7 @@
   .n-gray{color: #64748B;
   }
   h1,h2{
-  line-height: 40px;
+  line-height: 60px;
   }
   .letter-s-n{
   letter-spacing:normal!important;
@@ -638,6 +638,9 @@
   }
   /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 600px) {
+    h1,h2{
+      line-height: 40px;
+      }
     #checkout .font-16-500, .font-16-600{
       font-size:14px!important;
     }
