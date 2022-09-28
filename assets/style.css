@@ -1046,7 +1046,7 @@ flex-direction: row!important;
   width:100%;
   }
   .box > button{
-  margin:0px -16px 0px 0px;
+  margin:0px -3px 0px 0px;
   padding:15px 40px;
   }
   .box > button:hover{
@@ -2501,6 +2501,7 @@ button.accordion{
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: transparent;
+ 
 }
 .text-n-g{color:#64748B;
 }
